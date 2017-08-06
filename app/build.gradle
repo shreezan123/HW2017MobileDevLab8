@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
-        applicationId "com.diglesia.hw2017mobiledev.lab7"
+        applicationId "com.saryal.hw2017mobiledev.lab7"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1

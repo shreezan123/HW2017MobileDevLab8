@@ -1,4 +1,4 @@
-package com.diglesia.hw2017mobiledev.lab7;
+package com.saryal.hw2017mobiledev.lab7;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
