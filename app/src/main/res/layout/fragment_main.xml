@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorFragmentBackground">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="snapshot at root:"
-        android:padding="10dp"/>
-    <TextView
-        android:id="@+id/root_text_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFragmentBackground">
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="10dp"
-        android:background="@color/colorFragmentTextViewBackground"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="snapshot at root/fun_path:"
-        android:padding="10dp"/>
-    <TextView
-        android:id="@+id/subtree_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="10dp"
-        android:background="@color/colorFragmentTextViewBackground"/>
+        android:layout_weight="1">
 
+        <ListView
+            android:id="@+id/all_pings_list_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"/>
+        <ListView
+            android:id="@+id/queried_pings_list_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_ping_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send ping"/>
 
 </LinearLayout>
